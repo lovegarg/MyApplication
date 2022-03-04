@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idRLCurrency"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/idSymbol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_vector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="3dp"
+        android:text="@string/crypto_name"
+        android:textColor="#F0F2FF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/idSymbol"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--text view for displaying currency rate-->
+    <TextView
+        android:id="@+id/idRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        android:textSize="15sp"
+        android:padding="3dp"
+        android:text="@string/sample_price"
+        android:textColor="#F0F2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/idBTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="15sp"
+        android:padding="3dp"
+        android:text="@string/sample_price"
+        android:textColor="#868E96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idRate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:focusable="true"-->
+    <!--    android:orientation="vertical"-->
+    <!--    android:paddingTop="4dp"-->
+    <!--    android:paddingBottom="4dp"-->
+    <!--    tools:ignore="MissingDefaultResource">-->
+
+    <!--    &lt;!&ndash;    android:background="@drawable/button_ripple_effect"&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/exchangeNameTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:textColor="@color/colorPrimary"-->
+    <!--        android:textSize="14sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/volTitleTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/exchangeNameTextView" />-->
+    <!--    &lt;!&ndash;    android:text="@string/volume24h"&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/volDataTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/volTitleTextView"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/exchangeNameTextView" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/changeTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/priceTextView" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/priceTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
